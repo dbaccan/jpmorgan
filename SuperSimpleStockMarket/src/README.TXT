@@ -5,7 +5,7 @@ Davi Baccan
 
 1) Initial considerations
 
-The system consists of several classes (please see the file ClassDiagram.png).
+The system consists of several classes (please see the file ClassDiagram.png). It was developed using Java 1.8.
 
 The Stock class is an abstraction for all kinds of stocks. It includes all the variables and methods
 that are generic for all kinds of stocks. The Stock class also encapsulates the trades (represented by the Trade class) 
