@@ -17,8 +17,9 @@ Last but not least, the "stock market" in itself is represented by the GbceExcha
 
 2) How to use the system
 
-All stocks, both CommonStock and PreferredStock, should be added to the GbceExchange class so that we can track them and calculate the GBCE All Share Index. The list of trades belongs to each stock so that a 
-Trade should be recorded in each Stock class by adding the required information, with special attention to current time in which the trade took place.
+All stocks, both CommonStock and PreferredStock, should be added to the GbceExchange class so that we can track them and calculate the GBCE All Share Index. 
+The list of trades belongs to each stock so that a Trade should be recorded in each Stock class by adding the required information, with special attention to current time 
+in which the trade took place.
 
 3) How to test the system
 
