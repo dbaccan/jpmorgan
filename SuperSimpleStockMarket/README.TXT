@@ -11,17 +11,14 @@ The Stock class is an abstraction for all kinds of stocks. It includes all the v
 The Stock class also encapsulates the trades (represented by the Trade class) and has methods for calculating the volume weighted stock price and P/E Ratio.
 
 CommonStock and PreferredStock are types of stocks so we implement them as subclasses of the Stock class. 
-Due to the fact that the computation of the dividend yield depends on the type of stock, the actual implementation 
-is done in each subclass.
+Due to the fact that the computation of the dividend yield depends on the type of stock, the actual implementation is done in each subclass.
 
 Last but not least, the "stock market" in itself is represented by the GbceExchange class.
 
 2) How to use the system
 
-All stocks, both CommonStock and PreferredStock, should be added to the GbceExchange class so that we can track them and 
-calculate the GBCE All Share Index. The list of trades belongs to each stock so that a 
-Trade should be recorded in each Stock class by adding the required information, with special attention to current 
-time in which the trade took place.
+All stocks, both CommonStock and PreferredStock, should be added to the GbceExchange class so that we can track them and calculate the GBCE All Share Index. The list of trades belongs to each stock so that a 
+Trade should be recorded in each Stock class by adding the required information, with special attention to current time in which the trade took place.
 
 3) How to test the system
 
