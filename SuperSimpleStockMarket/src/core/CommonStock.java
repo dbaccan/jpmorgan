@@ -8,6 +8,7 @@ public class CommonStock extends Stock {
 	
 	@Override
 	protected double calculateDividendYield(double pPrice) {
+		super.validatePrice(pPrice);
 		return this.lastDividend / pPrice;
 	}
 

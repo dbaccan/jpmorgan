@@ -169,4 +169,18 @@ public class Testing {
 		assertEquals(100.0000, shareIndex.doubleValue(), 0.0001);
 	}
 	
+	@Test
+	public void gettingPeRatio() {
+		Stock gin = new PreferredStock();
+		gin.setStockSymbol("GIN");
+		gin.setLastDividend(0.08);
+		gin.setFixedDividend(0.02);
+		gin.setParValue(1.00);
+		
+		BigDecimal peRatio = new BigDecimal(gin.getPeRatio(3.00)).
+				setScale(4,BigDecimal.ROUND_HALF_UP);
+		
+		assertEquals(0.0267, peRatio.doubleValue(), 0.0001);
+	}
+	
 }

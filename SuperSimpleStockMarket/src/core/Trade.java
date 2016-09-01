@@ -29,4 +29,5 @@ public class Trade {
 		this.isBuy = pIsBuy;
 		this.price = pPrice;
 	}
+	
 }

@@ -8,6 +8,8 @@ public class PreferredStock extends Stock {
 	
 	@Override
 	protected double calculateDividendYield(double pPrice) {
+		super.validatePrice(pPrice);
+		
 		return this.fixedDividend * this.parValue / pPrice;
 	}
 

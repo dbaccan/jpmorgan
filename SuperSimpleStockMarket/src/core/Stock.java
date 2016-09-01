@@ -73,7 +73,15 @@ public abstract class Stock {
 
 	protected abstract double calculateDividendYield(double pPrice);
 	
+	protected void validatePrice(double pPrice) {
+		if (pPrice == 0.0) {
+			throw new IllegalArgumentException("Price is 0");
+		}
+	}
+	
 	protected double getPeRatio(double pPrice) {
+		validatePrice(pPrice);
+		
 		return this.lastDividend / pPrice;
 	}
 	
